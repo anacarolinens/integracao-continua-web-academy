@@ -7,7 +7,7 @@ on:
     paths:
       - 'sgcmapi/**'
 jobs:
-  build:
+  compile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3 
