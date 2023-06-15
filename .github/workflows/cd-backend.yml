@@ -18,6 +18,6 @@ jobs:
         working-directory: sgcmapi/
         run: railway up --detach --service sgcmapi
         env: 
-          RAILWAY_TOKEN: ${{ secrets.token }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
       
   
