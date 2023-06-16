@@ -17,4 +17,4 @@ jobs:
         working-directory: sgcmapp/
         run: railway up --detach --service sgcmapp
         env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_FRONT }}
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_FRONTEND }}
