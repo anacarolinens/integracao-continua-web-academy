@@ -1,3 +1,4 @@
+name: CD Front-end
 on:
   workflow_dispatch:
   
