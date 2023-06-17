@@ -17,7 +17,6 @@ jobs:
       - name: Deploy
         working-directory: sgcmapi/
         run: railway up --detach --service sgcmapi
-        env: 
+        env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
-      
-  
+

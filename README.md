@@ -31,7 +31,7 @@ Ou
 cd sgcmapi
 mvn spring-boot:run
 ```
-A aplicação vai iniciar no endereço <http://localhost:9000>, com acesso local a base de dados MySQL, por meio da porta padrão 3306, além de usuário e senha "root".
+A aplicação vai iniciar no endereço <https://localhost:9000>, com acesso local a base de dados MySQL, por meio da porta padrão 3306, além de usuário e senha "root".
 
 ## Front-end
 Para iniciar a aplicação, é necessário também instalar as dependências do projeto.
@@ -116,3 +116,19 @@ A aplicação vai iniciar no endereço <https://localhost:4200>.
 # SGCM - Diagrama Entidade Relacionamento
 
 ![SGCM_DER](sgcmDER.svg)
+
+# Atividadse práticas
+
+1. Criar workflows para integração e implantação contínua para o projeto front-end utilizando o GitHub Actions. (Entrega: 16/06/2023)
+
+    - A implantação pode ser feita em qualquer plataforma. Exemplos:
+      - Railway (com ou sem Docker): <https://railway.app/>
+      - Netlify (não tem suporte para Docker): <https://www.netlify.com/>
+      - Vercel (não tem suporte para Docker): <https://vercel.com/>
+    - Comando para executar os testes: ```ng test --no-watch --no-progress```
+    - Comando para compilar o projeto: ```ng build```
+    - IMPORTANTE:
+      - Configurar a constante ```API_URL``` no arquivo ```environment.ts``` do projeto front-end.
+      - Modificar as configurações de CORS no back-end para adicionar o host da aplicação front-end em produção.
+      - A implantação deve ser feita obrigatoriamente por meio do GitHub Actions.
+    - Ao concluir a atividade, os grupos devem compartilhar os arquivos dos workflows (.yml) no repositório de atividades práticas do grupo.
