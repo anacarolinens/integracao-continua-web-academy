@@ -8,8 +8,7 @@ jobs:
     name: Deploy to Railway
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: 14
       - name: Install Railway CLI
@@ -19,3 +18,6 @@ jobs:
         run: railway up --detach --service sgcmapp
         env:
           RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN_FRONTEND }}
+          
+
+
