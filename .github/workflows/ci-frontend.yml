@@ -1,6 +1,8 @@
 name: CI Front-end
 on:
   push:
+    paths:
+      - 'sgcmapi/**'
     branches:
       - '**'
       - '!main'
